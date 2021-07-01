@@ -1,0 +1,26 @@
+name: Post Merge
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+
+  deploy-edge:
+    name: Push Edge Release
+    runs-on: ubuntu-20.04
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Build Linux
+      run: make build
+
+    - name: Deploy Edge
+      env:
+        DOCKER_USER: ${{ secrets.DOCKER_USER }}
+        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+        DOCKER_IMAGE: ${{ secrets.DOCKER_IMAGE }}
+      if: ${{ env.DOCKER_USER && env.DOCKER_PASSWORD }}
+      run: make plugin-push

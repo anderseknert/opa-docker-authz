@@ -14,12 +14,6 @@ jobs:
     - name: Build (Linux)
       run: make build
 
-    - name: Upload binaries
-      uses: actions/upload-artifact@v2
-      with:
-        name: opa-docker-authz
-        path: ./
-
   test:
     name: Test
     runs-on: ubuntu-20.04
