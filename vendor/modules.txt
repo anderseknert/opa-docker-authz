@@ -1,22 +1,28 @@
 # github.com/Microsoft/go-winio v0.4.14
+## explicit
 github.com/Microsoft/go-winio
 github.com/Microsoft/go-winio/pkg/guid
 # github.com/OneOfOne/xxhash v1.2.8
 github.com/OneOfOne/xxhash
-# github.com/bytecodealliance/wasmtime-go v0.27.0
+# github.com/bytecodealliance/wasmtime-go v0.28.0
 github.com/bytecodealliance/wasmtime-go
 github.com/bytecodealliance/wasmtime-go/build/include
+github.com/bytecodealliance/wasmtime-go/build/include/wasmtime
 github.com/bytecodealliance/wasmtime-go/build/linux-x86_64
 github.com/bytecodealliance/wasmtime-go/build/macos-x86_64
 github.com/bytecodealliance/wasmtime-go/build/windows-x86_64
 # github.com/coreos/go-systemd v0.0.0-20190719114852-fd7a80b32e1f
+## explicit
 github.com/coreos/go-systemd/activation
 # github.com/docker/go-connections v0.4.1-0.20190612165340-fd1b1942c4d5
+## explicit
 github.com/docker/go-connections/sockets
 # github.com/docker/go-plugins-helpers v0.0.0-20170919092928-bd8c600f0cdd
+## explicit
 github.com/docker/go-plugins-helpers/authorization
 github.com/docker/go-plugins-helpers/sdk
 # github.com/ghodss/yaml v1.0.1-0.20190212211648-25d852aebe32
+## explicit
 github.com/ghodss/yaml
 # github.com/gobwas/glob v0.2.3
 github.com/gobwas/glob
@@ -27,9 +33,12 @@ github.com/gobwas/glob/syntax/ast
 github.com/gobwas/glob/syntax/lexer
 github.com/gobwas/glob/util/runes
 github.com/gobwas/glob/util/strings
+# github.com/golangci/golangci-lint v1.40.1
+## explicit
 # github.com/gorilla/mux v1.8.0
 github.com/gorilla/mux
-# github.com/open-policy-agent/opa v0.29.4
+# github.com/open-policy-agent/opa v0.30.1
+## explicit
 github.com/open-policy-agent/opa/ast
 github.com/open-policy-agent/opa/ast/internal/scanner
 github.com/open-policy-agent/opa/ast/internal/tokens
