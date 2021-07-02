@@ -14,12 +14,9 @@ jobs:
     - name: Check out code
       uses: actions/checkout@v2
 
-    - name: Build Linux
-      run: make build VERSION=latest
-
     - name: Deploy Edge
       env:
         DOCKER_USER: ${{ secrets.DOCKER_USER }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       if: ${{ env.DOCKER_USER && env.DOCKER_PASSWORD }}
-      run: make plugin-push VERSION=latest
+      run: make plugin plugin-push VERSION=latest
